@@ -1,0 +1,7 @@
+aid: cliffs-natural-resources
+url: https://raw.githubusercontent.com/api-evangelist/cliffs-natural-resources/refs/heads/main/apis.yml
+modified: '2026-03-23'
+apis: []
+common:
+  - type: Website
+    url: https://www.cliffs-natural-resources.com
