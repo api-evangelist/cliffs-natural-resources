@@ -1,7 +1,11 @@
 aid: cliffs-natural-resources
-url: https://raw.githubusercontent.com/api-evangelist/cliffs-natural-resources/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/cliffs-natural-resources/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.cliffs-natural-resources.com
+description: >-
+  Cliffs Natural Resources is a major mining and natural resources company that produces
+  iron ore pellets primarily for steelmaking customers in North America.
