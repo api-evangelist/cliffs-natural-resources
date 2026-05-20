@@ -39,6 +39,8 @@ artifacts:
       operations, sustainability, and investor information for the company
       formerly known as Cliffs Natural Resources.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/cleveland-cliffs
   - type: Website
     url: https://www.clevelandcliffs.com
   - type: Investor Relations
