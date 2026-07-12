@@ -39,6 +39,8 @@ artifacts:
       operations, sustainability, and investor information for the company
       formerly known as Cliffs Natural Resources.
 common:
+  - type: DomainSecurity
+    url: security/cliffs-natural-resources-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/cleveland-cliffs
   - type: Website
@@ -51,6 +53,8 @@ common:
     url: https://www.clevelandcliffs.com/privacy-policy
   - type: Canonical Profile
     url: https://raw.githubusercontent.com/api-evangelist/cleveland-cliffs/refs/heads/main/apis.yml
+  - url: https://www.clevelandcliffs.com/news/news-releases/rss
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kinlane@gmail.com
