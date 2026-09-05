@@ -1,0 +1,107 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Live anonymous HTTPS probes of the RFC 8615 well-known paths on every host this
+  record knows. Cliffs Natural Resources is the legacy corporate name for
+  Cleveland-Cliffs Inc.; the record carries no apis[] entries and no OpenAPI, so the
+  host set is the corporate registrable domain (clevelandcliffs.com + www) plus the
+  one customer-facing application host named from the company's own Doing Business
+  pages (cert.cliffssteel.com, the Cliffs CSC login).
+note: >-
+  Every probed path returned HTTP 404 carrying the corporate site's standard
+  "Page Not Found" HTML (~40KB). No well-known document of any kind is served, so
+  NO WellKnown and NO SecurityTxt pointer is emitted in apis.yml — this file records
+  a measured absence, not a published surface.
+hosts:
+  - host: www.clevelandcliffs.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: clevelandcliffs.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: cert.cliffssteel.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery, recorded here because the repo has no openapi/ dir to
+    hold it. No REST, GraphQL, MCP, A2A, OGC, gRPC or SOAP contract was found on any host.
+  probes:
+    - url: https://www.clevelandcliffs.com/openapi.json
+      status: 404
+      result: corporate 404 HTML shell, not a spec
+    - url: https://www.clevelandcliffs.com/swagger.json
+      status: 404
+      result: corporate 404 HTML shell, not a spec
+    - url: https://www.clevelandcliffs.com/api-docs
+      status: 404
+      result: corporate 404 HTML shell, not a spec
+    - url: https://www.clevelandcliffs.com/llms.txt
+      status: 404
+      result: not served
+    - url: https://clevelandcliffs.com/openapi.json
+      status: 404
+      result: corporate 404 HTML shell, not a spec
+    - url: https://cert.cliffssteel.com/openapi.json
+      status: 404
+      result: not served
+    - url: https://developer.clevelandcliffs.com/
+      status: 0
+      result: DNS does not resolve
+    - url: https://api.clevelandcliffs.com/
+      status: 0
+      result: DNS does not resolve
+    - url: https://docs.clevelandcliffs.com/
+      status: 0
+      result: DNS does not resolve
+    - url: https://www.cliffsnaturalresources.com/
+      status: 0
+      result: legacy pre-2017 corporate domain no longer resolves
+  ogc: not-applicable — no geospatial surface, no baseURL, no docs link naming WMS/WFS/OGC API
+  graphql: not-applicable — no /graphql surface named anywhere on the corporate site
+  mcp: not-applicable — no MCP endpoint published or referenced

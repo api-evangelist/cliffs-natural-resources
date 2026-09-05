@@ -24,7 +24,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 created: '2026-03-23'
-modified: '2026-04-26'
+modified: '2026-09-05'
 type: Index
 access: 3rd-Party
 position: Consuming
@@ -77,6 +77,38 @@ common:
     url: https://raw.githubusercontent.com/api-evangelist/cleveland-cliffs/refs/heads/main/apis.yml
   - url: https://www.clevelandcliffs.com/news/news-releases/rss
     type: Blog
+  - type: LLMsTxt
+    url: llms/cliffs-natural-resources-llms.txt
 maintainers:
   - FN: Kin Lane
     email: kinlane@gmail.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Cleveland-Cliffs (the current name for Cliffs Natural Resources) runs no developer
+    program at all — developer/api/docs.clevelandcliffs.com do not resolve, the corporate
+    site serves its standard 404 page for every /.well-known/*, /openapi.json and /llms.txt
+    path, and its own "For Suppliers" page routes partners to login-gated web portals
+    (isupplier.cliffssteel.com, cert.cliffssteel.com) and emailed invoices rather than to any
+    documented interface.
+  evidence:
+    - url: https://developer.clevelandcliffs.com/
+      status: 0
+    - url: https://www.clevelandcliffs.com/openapi.json
+      status: 404
+    - url: https://www.clevelandcliffs.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.clevelandcliffs.com/llms.txt
+      status: 404
+    - url: https://www.clevelandcliffs.com/doing-business/for-suppliers
+      status: 200
+  checked: '2026-09-05'
+x-parent: cleveland-cliffs
+x-relationship: rebrand-predecessor
+x-acquired: 2017
