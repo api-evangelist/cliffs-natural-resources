@@ -1,7 +1,9 @@
 ---
 title: 'Cleveland-Cliffs Vs GRAY MEDIA -A: Which is a Better Buy ...'
 url: https://danelfin.com/stocks/CLF-cleveland-cliffs-vs-GTN.A-gray-media-a-compare
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Cliffs Natural Resources" press release artificial intelligence'
 position: 4
 source: serpapi-google

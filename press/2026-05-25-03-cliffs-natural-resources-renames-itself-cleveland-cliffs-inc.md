@@ -1,7 +1,9 @@
 ---
 title: Cliffs Natural Resources renames itself Cleveland-Cliffs Inc.
 url: https://www.uppermichiganssource.com/content/news/Cliffs-Natural-Resources-440498943.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Cliffs Natural Resources" press release artificial intelligence'
 position: 3
 source: serpapi-google

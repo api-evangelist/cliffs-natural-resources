@@ -1,7 +1,9 @@
 ---
 title: Cleveland-Cliffs Reports First-Quarter 2026 Results
 url: https://earningswhispers.com/epsdetails/CLF
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Cliffs Natural Resources" press release artificial intelligence'
 position: 5
 source: serpapi-google
